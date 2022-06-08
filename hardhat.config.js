@@ -3,8 +3,10 @@
  */
 require("@nomiclabs/hardhat-ethers");
 module.exports = {
-  solidity: "^0.8.9",
+  solidity: "0.8.9",
   paths:{
-    artifacts: "./frontend/src/artifacts"
+    sources: "./contracts",
+    tests: "./test",
+    artifacts: "./schedule-frontend/src/artifacts"
   }
 };
