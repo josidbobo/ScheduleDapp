@@ -28,7 +28,7 @@ const formatDate = rawDate => {
       <div className="card">
         <div className="row">
           <div className="col-sm-12">
-            <h2 className="orange">Tasks</h2>
+            <h2 className="orange">Your Tasks</h2>
           </div>
         </div>
         <div className="row">

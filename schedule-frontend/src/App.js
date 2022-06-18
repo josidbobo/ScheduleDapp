@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import TaskList from './components/TaskList.js';
+import DisplayTask from './components/DisplayTask.js';
 import NewTask from './components/NewTask.js';
-import getBlockchain from './ethereum.js';
+import getBlockchain from './components/Ethereum.js';
 import './style.css';
 
 function App() {
@@ -42,7 +42,7 @@ function App() {
         </div>
         <div className="row">
           <div className="col-sm-12">
-            <TaskList tasks={tasks} toggleDone={toggleDone} />
+            <DisplayTask tasks={tasks} toggleDone={toggleDone} />
           </div>
         </div>
       </div>

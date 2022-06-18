@@ -8,5 +8,12 @@ module.exports = {
     sources: "./contracts",
     tests: "./test",
     artifacts: "./schedule-frontend/src/artifacts"
+  },
+  defaultNetwork: "localhost",
+  networks:{
+    rinkeby: {
+      url: "" ,
+      accounts:[""]
+    }
   }
 };

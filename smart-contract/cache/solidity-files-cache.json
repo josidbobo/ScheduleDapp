@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\OKORO JOSHUA\\Desktop\\Dapps\\ScheduleDapp\\contracts\\Schedule.sol": {
-      "lastModificationDate": 1654697019970,
-      "contentHash": "d6e8d51afe3bf528b0d1bc006e92fe7b",
+    "C:\\Users\\OKORO JOSHUA\\Desktop\\Dapps\\ScheduleDapp\\smart-contract\\contracts\\Schedule.sol": {
+      "lastModificationDate": 1654709966899,
+      "contentHash": "f8fcd18551ebaa5e4e5ca2ad96f6a6c9",
       "sourceName": "contracts/Schedule.sol",
       "solcConfig": {
         "version": "0.8.9",

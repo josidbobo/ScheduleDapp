@@ -10,7 +10,7 @@
 9. npx hardhat node --> For accounts on hardhat node
 10. cd to the contract folder and run (npx hardhat compile) --> compile the files
 11. (cd -) out of the contract folder 
-12. npx hardhat run --network localhost scripts/deploy.js --> Replace localhost with network to deploy to
+12. npx hardhat run scripts/deploy.js --network localhost --> Replace localhost with network to deploy to
 
 # How to start the frontEnd
 1. npx create-react-app my-app --> replace my-app with name of your app

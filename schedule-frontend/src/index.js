@@ -1,6 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/@metamask/detect-provider/dist/detect-provider.js';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

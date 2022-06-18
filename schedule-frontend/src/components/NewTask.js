@@ -13,7 +13,7 @@ function NewTask({createTask}) {
       <div className="card">
         <div className="row">
           <div className="col-sm-12">
-            <h2 className="orange">Create Task</h2>
+            <h2 className="orange">Create a Task</h2>
           </div>
         </div>
         <div className="row">

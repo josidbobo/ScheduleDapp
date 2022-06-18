@@ -1,6 +1,6 @@
 import detectEthereumProvider from '@metamask/detect-provider';
 import { ethers, Contract } from 'ethers';
-import Todo from './artifacts/contracts/Todo.sol/Todo.json';
+import Schedule from '../artifacts/contracts/Schedule.sol/Schedule.json';
 
 const getBlockchain = () =>
   new Promise( async (resolve, reject) => {
@@ -10,12 +10,12 @@ const getBlockchain = () =>
       const networkId = await provider.request({ method: 'net_version' })
       provider = new ethers.providers.Web3Provider(provider);
       const signer = provider.getSigner();
-      const todo = new Contract(
-        'Put contract address here'
-        Todo.abi,
+      const schedule = new Contract(
+        '0xc08894b48cF9d32EAda4F9315b4C3efAA8ec2Ec1',
+        Schedule.abi,
         signer
       );
-      resolve({todo});
+      resolve({schedule});
       return;
     }
     reject('Install Metamask');
