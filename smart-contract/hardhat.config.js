@@ -7,7 +7,7 @@ module.exports = {
   paths:{
     sources: "./contracts",
     tests: "./test",
-    artifacts: "./schedule-frontend/src/artifacts"
+    artifacts: "../schedule-frontend/src/artifacts"
   },
   defaultNetwork: "localhost",
   networks:{
