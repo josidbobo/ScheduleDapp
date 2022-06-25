@@ -3,13 +3,16 @@
 function NewTask({createTask}) {
     const onSubmit = e => {
       e.preventDefault();
+      console.log("Creating tasks....");
       createTask(
         e.target.elements[0].value,
         e.target.elements[1].value
       );
+      console.log("Created task!");
     }
   
     return (
+      <div style={{display: "ruby-base-container" , margin: "100px", fontSize: "20px"}}>
       <div className="card">
         <div className="row">
           <div className="col-sm-12">
@@ -29,6 +32,7 @@ function NewTask({createTask}) {
             <button type="submit" className="btn btn-primary">Submit</button>
           </form>
         </div>
+      </div>
       </div>
     );
   }
