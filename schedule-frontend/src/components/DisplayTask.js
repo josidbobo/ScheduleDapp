@@ -8,7 +8,7 @@ const formatDate = rawDate => {
   
   function TaskList({tasks, toggleDone}) {
     const renderTask = task => (
-      <tr key={task.id}>
+      <tr key={task.id.toString()}>
         <td>{task.id.toString()}</td>
         <td>{formatDate(task.date.toString())}</td>
         <td>{task.content}</td>
