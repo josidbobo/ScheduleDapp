@@ -40,10 +40,14 @@ function App() {
   }
 
   const toggleDone = async id => {
+    try{
     const tx = await schedule.toggleDone(id);
     await tx.wait();
     const tasks = await schedule.getTask(); 
     setTasks(tasks);
+    }catch(e){
+      console.log(e.message);
+    }
   }
 
   return (

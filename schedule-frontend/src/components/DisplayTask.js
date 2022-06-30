@@ -10,7 +10,7 @@ const formatDate = rawDate => {
     const renderTask = task => (
       <tr key={task.id.toString()}>
         <td>{task.id.toString()}</td>
-        <td>{formatDate(task.date.toString())}</td>
+        <td>{formatDate(task.date)}</td>
         <td>{task.content}</td>
         <td>{task.author}</td>
         <td>
@@ -20,7 +20,7 @@ const formatDate = rawDate => {
             checked={!!task.done}
           />
         </td>
-        <td>{task.dateComplete.toString() !== '0' ? formatDate(task.dateComplete.toString()) : ''}</td>
+        <td>{task.dateComplete.toString() !== '0' ? formatDate(task.dateComplete) : ''}</td>
       </tr>
     );
     
