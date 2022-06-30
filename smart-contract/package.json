@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "npx hardhat compile",
-    "deploy": "npx hardhat run ./scripts/deploy.js",
+    "deploy": "npx hardhat run scripts/deploy.js --network goerli",
     "verify": "npx hardhat verify",
     "test": "npx hardhat test"
   },

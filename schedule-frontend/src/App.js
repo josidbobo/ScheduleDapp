@@ -27,13 +27,14 @@ function App() {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
 
-    const schedule = new ethers.Contract('0xc08894b48cF9d32EAda4F9315b4C3efAA8ec2Ec1', Schedule.abi, signer);
+    const schedule = new ethers.Contract('0x57B25FAB2CE53935812FBe022D5c30b445BA326B', Schedule.abi, signer);
   
     const tx = await schedule.createTask(content, author);
-    alert(tx.toString());
+    tx.wait();
     const tasks = await schedule.getTask(); 
     setTasks(tasks);
-    console.log('WEB3 function: created tasks');} catch(e){
+    console.log('WEB3 function: created tasks');} 
+    catch(e){
       alert(e.toString());
     }
   }

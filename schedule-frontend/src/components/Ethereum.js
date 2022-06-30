@@ -11,7 +11,7 @@ const getBlockchain = () =>
       provider = new ethers.providers.Web3Provider(provider);
       const signer = provider.getSigner();
       const schedule = new Contract(
-        '0xc08894b48cF9d32EAda4F9315b4C3efAA8ec2Ec1',
+        '0x57B25FAB2CE53935812FBe022D5c30b445BA326B',
         Schedule.abi,
         signer
       );
